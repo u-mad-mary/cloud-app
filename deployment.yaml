@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: cloud-app
-          image: umadmary/cloud-app:b1f68168335dbe9f5d91f95953d05c3b2a557143
+          image: umadmary/cloud-app:
           ports:
             - containerPort: 8080
           readinessProbe:

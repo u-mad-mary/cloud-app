@@ -23,4 +23,3 @@ kubectl annotate deployment cloud-app-deployment \
   kubernetes.io/change-cause="Deployed: $COMMIT_MSG" --overwrite
 
 minikube service cloud-app-service
-kubectl port-forward svc/cloud-app-service 8080:80
