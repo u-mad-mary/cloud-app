@@ -4,9 +4,9 @@ metadata:
   name: cloud-app-deployment
 spec:
   strategy:
-    type: RollingUpdate
+    type: RollingUpdate #update pods one at a time with no downtime
     rollingUpdate:
-      maxSurge: 1
+      maxSurge: 1 #allow 1 extra pod during update
       maxUnavailable: 0
   replicas: 2
   selector:
